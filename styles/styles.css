@@ -7,3 +7,6 @@
   list-style: none;
   box-sizing: border-box;
 }
+body {
+  width: 75%;
+}
