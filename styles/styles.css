@@ -19,7 +19,6 @@
 .container {
   width: 90%;
   margin: 0 auto;
-  min-height: 100vh;
 }
 body {
   background-color: var(--color2);
@@ -36,7 +35,7 @@ h5 {
   line-height: 1.2;
 }
 h1 {
-  font-size: 3.8rem;
+  font-size: 1.5rem;
 }
 h2 {
   font-size: 2.6rem;
@@ -101,8 +100,37 @@ nav .container .logo-img img {
 
 /*=============================================END OF NAV BAR========================================*/
 .bottom {
-  position: sticky;
+  position: absolute;
   height: 130px;
+  width: 100%;
   background-color: black;
+  color: aliceblue;
   bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.play_icons i {
+  margin: 0 20px;
+}
+.play_icons i:hover {
+  cursor: pointer;
+}
+#progress_bar {
+  width: 80vw;
+}
+.songs_container {
+  background: url("../assets/images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  margin: 23px auto;
+  height: 25rem;
+  width: 70%;
+}
+.songs_container h1 {
+  margin: 1rem 1rem;
 }
