@@ -115,14 +115,18 @@ nav .container .logo-img img {
 .play_icons i {
   margin: 0 20px;
 }
-.play_icons i:hover {
-  cursor: pointer;
-}
+
 #progress_bar {
   width: 80vw;
+  cursor: pointer;
+}
+/*=======================================End of progress bar===========================================*/
+.play_button {
+  cursor: pointer;
 }
 .songs_container {
   background: url("../assets/images/background.jpg");
+  color: white;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -130,7 +134,37 @@ nav .container .logo-img img {
   margin: 23px auto;
   height: 25rem;
   width: 70%;
+  border-radius: 1rem;
 }
 .songs_container h1 {
   margin: 1rem 1rem;
+}
+.song_item {
+  height: 50px;
+  display: flex;
+  text-align: center;
+  overflow: hidden;
+  justify-content: space-around;
+  align-items: center;
+}
+.song_item img {
+  width: 43px;
+  margin: 0 23px;
+  border-radius: 50%;
+}
+.song_item .song_list_play {
+  display: flex;
+}
+.song_item .song_list_play span {
+  margin: 0 10px;
+}
+.song_info {
+  position: absolute;
+  margin-top: 1rem;
+  left: 10vw;
+}
+.bottom .song_info img {
+  width: 47px;
+  opacity: 0;
+  transition: opacity 1s ease-in;
 }
