@@ -31,6 +31,9 @@ audioelement.addEventListener("timeupdate", () => {
   let progress = Math.round(
     (audioelement.currentTime / audioelement.duration) * 100
   );
-  console.log(progress);
   progressBar.value = progress;
+});
+
+progressBar.addEventListener("click", () => {
+  audioelement.currentTime = (progressBar.value * audioelement.duration) / 100;
 });
